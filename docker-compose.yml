@@ -16,7 +16,7 @@ services:
     depends_on:
       - redis
   redis:
-    image: redis:6.0-rc3
+    image: redis:6.0-rc4-alpine
     # TODO: missing persistence for redis. You need to persist /data directory.
     volumes:
       - redis-data:/data
